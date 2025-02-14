@@ -119,7 +119,7 @@ public class ConvolutionLayer extends Layer {
     @Override
     public double[] getOutput(double[] input) {
         List<double[][]> matrixInput = vectorToMatrix(input, _inLength, _inRows, _inCols);
-        getOutput(matrixInput);
+        return getOutput(matrixInput);
     }
 
     @Override
